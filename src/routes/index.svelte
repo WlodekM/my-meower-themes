@@ -11,10 +11,12 @@
      It is also safe to remove the src/routes/examples folder. -->
 <div class="grid">
     {#each Object.keys(themes) as themeID}
-        <div class="theme">
-            <ThemePreview size={0.5} theme={themes[themeID].json}/>
-            {themes[themeID].title}
-        </div>
+        <a href="/themes/{themeID}">
+            <div class="theme">
+                <ThemePreview size={0.5} theme={themes[themeID].json}/>
+                {themes[themeID].title}
+            </div>
+        </a>
     {/each}
 </div>
 

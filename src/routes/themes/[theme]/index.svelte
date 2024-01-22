@@ -11,6 +11,7 @@
         </h1>
         <ThemePreview size={1} theme={themes[$params.theme].json}/>
     </center>
+    <textarea style="width: calc(100vw - 8px * 3)" rows="10">{JSON.stringify(themes[$params.theme].json)}</textarea>
 {:else}
     Not found
 {/if}
