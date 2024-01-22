@@ -39,6 +39,7 @@
         background: #333;
         padding: 10px;
         border-radius: 10px;
+        color: #eee !important;
     }
     :global(.theme div svg) {
         border-radius: 5px;
