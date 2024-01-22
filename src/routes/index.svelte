@@ -9,6 +9,11 @@
 
 <!-- Remove this element to remove the Routify Welcome content. 
      It is also safe to remove the src/routes/examples folder. -->
+<center>
+    <h1>
+        WlodekM's super cool themes
+    </h1>
+</center>
 <div class="grid">
     {#each Object.keys(themes) as themeID}
         <a href="/themes/{themeID}">
@@ -22,8 +27,20 @@
 
 <style>
     .grid {
-        display: grid;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         gap: 5px;
-        grid-template-columns: auto auto auto auto;
+    }
+    .theme {
+        flex: 1;
+        min-width: calc(890px * 0.5);
+        background: #333;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    :global(.theme div svg) {
+        border-radius: 5px;
     }
 </style>
